@@ -5,12 +5,17 @@
     <title>Question 1</title>
 </head>
 <body>
-    <div id="myElement">
-        <p>Welcome to my website!</p>
-    </div>
+    <p id="demo"></p>
 
     <script>
-        document.getElementById("myElement").innerHTML = 'Hello there!';
+        let text = "";
+
+        for (let i = 0; i<5; i++)
+        {
+            text += "The number is " + (i + 1) + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
     </script>
 </body>
 </html>
